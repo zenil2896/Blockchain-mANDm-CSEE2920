@@ -6,15 +6,15 @@ public class Main {
 	ArrayList<Block> blockchain = new ArrayList<>();
 
 	public static void main(String[] args) {
-		String message1 = "Hello how are you!";
+		String message1 = "Hello!";
 		String message2 = "Hi!";
 		Block Block0 = new Block(0, message1);
 		Block Block1 = new Block(Block0.getBlockHash(), message2);
 
-		String message3 = "The Toster needs energy";
-		String message4 = "The Tv has been on for too long ";
-		Block Block2 = new Block(Block1.getBlockHash(), message3);
-		Block Block3 = new Block(Block2.getBlockHash(), message4);
+		String message3 = "Hello!";
+		String message4 = "Hi!";
+		Block Block2 = new Block(0, message3);
+		Block Block3 = new Block(Block0.getBlockHash(), message4);
 		
 		System.out.println("Block 0 Hash: " + Block0.getBlockHash());
 		System.out.println("Block 0 Previous Hash: " + Block0.getPreviousHash());
