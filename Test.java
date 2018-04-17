@@ -1,18 +1,11 @@
 import java.util.Scanner;
-//import javax.swing.JFrame;
-//import javax.swing.JSlider;
 import com.fazecast.jSerialComm.*;
 
 public class Test {
 
 	public static void main(String[] args) {
 
-//		JFrame window = new JFrame();
-//		JSlider slider = new JSlider();
-//		slider.setMaximum(1023);
-//		window.add(slider);
-//		window.pack();
-//		window.setVisible(true);
+
 		
 		
 
@@ -35,13 +28,16 @@ public class Test {
 		}
 		//serialPort.setComPortParameters(9600, 8, 1, SerialPort.NO_PARITY);
 		serialPort.setComPortTimeouts(SerialPort.TIMEOUT_READ_BLOCKING, 0, 0);
-
+		
+		List<Block> BlockChain = new ArrayList<Block>();
+		BlockChain.add(new Block(0,"Block 0");
+		ListIterator<Block> listIterator = BlockChain.listIterator();	       
 		Scanner data = new Scanner(serialPort.getInputStream());
-		int value = 0;
+		String request = 0;
 		while(data.hasNextLine()){
-			try{value = Integer.parseInt(data.nextLine());}catch(Exception e){}
-//			slider.setValue(value);
-			System.out.println(value);
+			try{request = data.nextLine();}catch(Exception e){}	
+			BlockChain.add(new Block(listIterator.previous().hashCode, request);
+			listIterator.next();		       
 		}
 		System.out.println("Done.");
 	}
